@@ -22,6 +22,7 @@ h1 {
   text-align: center;
   
 } 
+
 /* MAKE BOLD */
 h2{
   font-family: 'Montserrat', sans-serif;
@@ -129,8 +130,7 @@ body, html {
 
 .journal_image {
     
-    border: 1px solid #555;
-    color: #AAA;
+    border: 1px solid rgba(0, 0, 0, 0.521);
     width: 100%;
     height: 100%;
     
@@ -159,7 +159,6 @@ input[type=submit] {
   border-radius: 4px;
   background-color: white;
   color: black;
-  cursor: pointer;
 }
 input[type=submit]:hover {
   background-color: #d8bfd8;
@@ -239,7 +238,7 @@ ul {
 }
 }
 /* DESKTOP VIEW */
-@media screen and (min-device-width: 900px){
+@media screen and (min-device-width: 1024px){
   .parallax {
     background-image: url("../imgs/portfolio_headshot.png");
     min-height: 150%;
@@ -268,4 +267,12 @@ ul {
       background-repeat: no-repeat;
       background-size: cover;
   }
+  .nav_links a:hover {
+    text-decoration: none;
+    background-color: white;
+  }
+  input[type=submit]:hover {
+    background-color: white;
+  }
+  
 }
